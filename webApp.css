@@ -1,0 +1,65 @@
+/* Genel Stil */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Dashboard Grid Yapısı */
+.dashboard {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* İlk sütun sabit, diğeri esnek genişlik */
+    grid-template-rows: 80px 1fr 150px; /* Header, içerik ve footer için satır yükseklikleri */
+    grid-gap: 20px; /* Hücreler arasında boşluk */
+    height: 100vh;
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+}
+
+/* Grid Alanları */
+.header {
+    grid-area: header;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.main {
+    grid-area: main;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.widgets {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Duyarlı Tasarım */
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-columns: 1fr; /* Tek sütun düzeni */
+        grid-template-areas: 
+            "header"
+            "main"
+            "sidebar"
+            "footer";
+    }
+}

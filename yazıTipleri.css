@@ -1,0 +1,57 @@
+/* Genel Stil */
+body {
+    font-family: 'Roboto', sans-serif; /* Google Fonts'dan entegre edilen font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6; /* Genel yazı yüksekliği */
+    color: #333;
+}
+
+/* Blog Başlığı */
+.blog-header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    font-family: 'Playfair Display', serif; /* Başlık için serif font */
+}
+
+.blog-header h1 {
+    font-size: 48px; /* Büyük başlık */
+    font-weight: 700;
+    letter-spacing: 2px; /* Harf aralığı */
+    margin: 0;
+}
+
+/* Blog İçeriği */
+.blog-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Yazı Tipleri ve Stil */
+.post h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px; /* Başlık boyutu */
+    margin-bottom: 10px;
+    color: #E0770A;
+}
+
+.post h3 {
+    font-size: 28px; /* Küçük başlık boyutu */
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #333;
+}
+
+.post p {
+    font-size: 18px; /* Paragraf boyutu */
+    line-height: 1.8; /* Satır yüksekliği */
+    margin-bottom: 15px;
+    text-align: justify; /* Metin hizalama */
+    letter-spacing: 0.5px; /* Harf aralığı */
+}

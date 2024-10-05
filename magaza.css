@@ -1,0 +1,63 @@
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Mağaza Başlığı */
+.store-header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Kategori Bölümü */
+.product-categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Kategoriler */
+.category {
+    width: 30%;
+    height: 200px;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+/* Elektronik Kategorisi (background-color ve rgba kullanımı) */
+.electronics {
+    background-color: rgba(0, 128, 255, 0.7); /* Yarı saydam mavi arka plan */
+}
+
+/* Moda Kategorisi (background-image ve background-size kullanımı) */
+.fashion {
+    background-image: url('https://via.placeholder.com/400x200'); /* Placeholder image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Moda kategorisindeki metnin daha okunaklı olması için arka plan */
+.fashion h2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    color: white;
+}
+
+/* Ev Aletleri Kategorisi (solid color ve background-size kullanımı) */
+.home-appliances {
+    background-image: url('https://via.placeholder.com/400x200');
+    background-size: cover; /* Resmin tam kapsaması için */
+    background-position: center;
+}

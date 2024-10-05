@@ -1,0 +1,92 @@
+/* Genel Stil */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #f4f4f4;
+    padding: 15px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.article {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Masaüstü İçin */
+@media (min-width: 768px) {
+    .content {
+        display: flex;
+    }
+
+    .navbar ul {
+        display: flex;
+    }
+
+    .article {
+        flex-basis: 70%;
+    }
+
+    .sidebar {
+        flex-basis: 30%;
+    }
+}
+
+/* Mobil İçin */
+@media (max-width: 767px) {
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .article, .sidebar {
+        margin-bottom: 20px;
+    }
+}

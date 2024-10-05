@@ -1,0 +1,58 @@
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Galeri Başlığı */
+.gallery-header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.gallery-header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Galeri Bölümü */
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Ekran boyutuna göre satır kaydırma */
+    justify-content: center; /* Fotoğrafların ortalanması */
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Fotoğraflar */
+.photo {
+    flex-basis: 300px; /* Her fotoğrafın minimum genişliği */
+    flex-grow: 1; /* Alan genişlediğinde fotoğrafların büyümesi */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Duyarlı Tasarım */
+@media screen and (max-width: 768px) {
+    .photo {
+        flex-basis: 100%; /* Daha küçük ekranlar için tam genişlik */
+    }
+}

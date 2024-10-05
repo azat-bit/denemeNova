@@ -1,0 +1,67 @@
+/* Genel stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* ID Seçici */
+#header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Class Seçicisi */
+.title {
+    font-size: 36px;
+    margin: 0;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* nth-child kullanımı */
+.nav-list li:nth-child(2) {
+    color: #E0770A; /* İkinci öğeye farklı stil uygulama */
+}
+
+#about {
+    padding: 20px;
+}
+
+#projects {
+    padding: 20px;
+}
+
+.project-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-list li:nth-child(2) {
+    font-weight: bold;
+}
+
+/* Pseudo-class ile hover kullanımı */
+.contact-btn {
+    background-color: #E0770A;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background-color: #333;
+    color: #E0770A;
+}

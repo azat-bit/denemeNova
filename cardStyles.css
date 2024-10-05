@@ -1,0 +1,94 @@
+/* Genel ayarlar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sayfa için stil */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Fiyatlandırma kartları kapsayıcısı */
+.pricing-container {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 1000px;
+}
+
+/* Her fiyat kartının genel stili */
+.pricing-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover ile kartın büyüme efekti */
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+/* Plan başlıkları */
+h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+/* Fiyat bilgisinin stili */
+.price {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Özellikler listesi */
+ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+/* Liste elemanları */
+ul li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Satın al butonunun stili */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover ile butonun renk değişimi */
+.btn:hover {
+    background-color: #555;
+}
+
+/* Responsive tasarım */
+@media (max-width: 800px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

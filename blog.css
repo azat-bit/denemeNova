@@ -1,0 +1,48 @@
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Blog Post Box Model */
+.blog-post {
+    width: 60%;
+    padding: 20px; /* İçerik ve border arasında boşluk */
+    border: 2px solid #333; /* Dış çizgi */
+    margin: 20px; /* Elementler arası dış boşluk */
+    background-color: white;
+    box-sizing: border-box; /* Taşma problemlerini önlemek için */
+    display: block;
+}
+
+/* Başlık Stil */
+.post-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #E0770A; /* Başlık alt çizgisi */
+    padding-bottom: 10px;
+}
+
+/* Meta Bilgi */
+.post-meta {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* İçerik */
+.post-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Box-Sizing */
+* {
+    box-sizing: border-box; /* Tüm elementlerde taşma sorununu çözmek için */
+}
